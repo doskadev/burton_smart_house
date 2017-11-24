@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/menu.css') }}">
+        <meta charset="utf-8">
+        <title>Accordion With CSS</title>
+    </head>
+    <body>
+        <main id="menu">
+            <section id="item1">
+                <a href="#item1"><h1>Item1</h1></a>
+                <p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </p>
+            </section>
+            <section id="item2">
+                <a href="#item2"><h1>Item2</h1></a>
+                <p>
+                    <button action="{{ url_for('menu') }}">Klik</button>
+                </p>
+            </section>
+            <section id="item3">
+                <a href="#item3"><h1>Item3</h1></a>
+                <p>
+                    Light
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
